@@ -151,6 +151,23 @@ header .main-nav ul li a:hover {
     }
 }
 
+/* Info Bar Styles */
+#info-bar {
+    position: absolute;
+    height: 3px;
+    background-color: #00aaff;
+    bottom: 0;
+    transition: width 0.3s ease, left 0.3s ease, transform 0.3s ease;
+    z-index: 10;
+}
+
+/* Hide Info Bar on mobile and tablet screens */
+@media (max-width: 768px) {
+    #info-bar {
+        display: none;
+    }
+}
+
 /* Home Page Styles */
 #home {
     background: #1f1f1f;
